@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build-raylib",
+            "type": "shell",
+            "command": "g++ src/*.cpp -O2 -Wall -o jogo -Iinclude -I/mingw64/include -L/mingw64/lib -lraylib -lopengl32 -lgdi32 -lwinmm",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$gcc"
+        }
+    ]
+}
